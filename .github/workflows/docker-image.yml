@@ -1,7 +1,7 @@
 name: Docker Build And Push GitHub Container Registry
 
 on:
-  [workflow_dispatch]
+  [push]
 
 jobs:
   publish:
