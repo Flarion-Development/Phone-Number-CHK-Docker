@@ -15,8 +15,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build
-        run: docker build -t flarion-development/phone-number-chk:latest .
+        run: docker build -t ghcr.io/flarion-development/phone-number-chk:latest .
       - name: Push
-        run: docker push flarion-development/phone-number-chk:latest
+        run: docker push ghcr.io/flarion-development/phone-number-chk:latest
       
       
