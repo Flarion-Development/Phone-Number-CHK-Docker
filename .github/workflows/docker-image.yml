@@ -19,7 +19,7 @@ jobs:
         run: docker build -t ghcr.io/flarion-development/phone-number-chk:latest .
 
       - name: Login to GitHub Container Registry
-        run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ secrets.GITHUB_USERNAME }} --password-stdin
+        run: docker login ghcr.io -u ${{ secrets.GHCR_USERNAME }} --password-stdin
 
       - name: Push Image
         run: docker push ghcr.io/flarion-development/phone-number-chk:latest
